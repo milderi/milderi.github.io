@@ -1,0 +1,191 @@
+html, body {
+	margin: 0;
+	padding: 0; 
+}
+
+body {
+	font-family: 'Archivo Narrow', Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	color: #4A4A4A;
+	background-color: #E8E8E5;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none; 
+	color: #111;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+ul{
+	list-style: none;
+	padding: 0; 
+}
+
+article {
+	margin: 145px 20px 30px;
+
+}
+
+/* header */
+
+header {
+	margin:0 20px;
+	padding-top: 20px;
+	display: block;
+	border-bottom: solid 4px #F2BC19;
+	position: fixed; 
+	top: 0;
+	z-index: 10;
+	background-color: #E8E8E5;
+	width: 100%;
+
+}
+
+/* navigation */ 
+nav ul {
+	display:table;
+	margin:0;
+}
+
+nav ul li {
+	margin: 15px;
+	float:left;
+	display:table-cell;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+.item a span {
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 55px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.item, .item a {
+	width: 55px;
+	height: 55px; 
+	border-radius: 50%;
+	display: block;
+	background-size: 100%;
+}
+
+.item.skills {
+	background-image: url(../img/skills.png);
+}
+
+.item.skills a {
+	background: rgba(231, 64, 85, 0.6)
+}
+
+.item.works  {
+	background-image: url(../img/works.png);
+}
+
+.item.works a {
+	background: rgba(77, 165, 196, 0.6)
+}
+
+.item.about  {
+	background-image: url(../img/me-bw.png);
+}
+
+.item.about a {
+	background: rgba(242, 188, 25, 0.6)
+}
+
+.item.skills a:hover, .item.skills.active a{
+	background: transparent;
+	color: #E74055;
+}
+
+.item.works a:hover, .item.works.active a {
+	background: transparent;
+	color: #4DA5C4;
+}
+
+.item.about a:hover, .item.about.active a {
+	background: transparent;
+	color: #F2BC19;
+}
+
+/* frontpage  */
+
+.frontpage {
+	max-width: 1024px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.frontpage h1 {
+	font-weight: 300;
+	font-size: 24px; 
+}
+
+.frontpage h1 span {
+	font-weight: 400;
+	font-size: 42px;
+	display: block; 
+}
+
+.frontpage nav ul {
+	display: block;
+
+}
+
+.frontpage nav ul li {
+	display:inline-block;
+	float: none;
+}
+
+.frontpage .item, .frontpage .item a {
+	width: 185px;
+	height: 185px; 
+	border-radius: 50%;
+	display: block;
+	background-size: 100%;
+	color: #fff;
+}
+
+.frontpage .item {
+	margin: 30px auto;
+}
+
+.frontpage .item a span {
+	position: relative;
+	display: inline-block;
+	margin-top: 130px;
+	font-size: 24px;
+	width: 185px;
+
+}
+
+
+
+
+
