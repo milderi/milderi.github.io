@@ -293,7 +293,7 @@ nav ul li:first-child {
 }
 
 .about img {
-	max-width: 350px;
+	max-width: 320px;
 	height: auto;
 }
 
@@ -335,6 +335,10 @@ nav ul li:first-child {
   	text-align: left;
   	font-size: 16px;
 	}	
+
+	p, li, a {
+		font-size: 18px;
+	}
 
 	p.lead {
 		font-size: 22px;
