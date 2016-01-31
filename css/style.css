@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot') format('embedded-opentype'),
+       url('../fonts/fontello.woff') format('woff'),
+       url('../fonts/fontello.ttf') format('truetype'),
+       url('../fonts/fontello.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
 	margin: 0;
 	padding: 0; 
@@ -37,9 +48,14 @@ h3 {
 	font-size: 18px;
 }
 
-ul{
+ul {
 	list-style: none;
 	padding: 0; 
+	margin-bottom: 20px;
+}
+
+li {
+	margin-bottom: 6px;
 }
 
 article {
@@ -47,19 +63,63 @@ article {
 
 }
 
+/* icons */
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ }
+
+.icon-twitter-circled:before { content: '\e800'; } /* '' */
+.icon-github-circled-alt2:before { content: '\e801'; } /* '' */
+.icon-facebook-circled:before { content: '\e802'; } /* '' */
+.icon-linkedin-circled:before { content: '\e803'; } /* '' */
+.icon-mail-circled:before { content: '\e804'; } /* '' */
+
 /* header */
 
 header {
 	margin:0 20px;
 	padding-top: 20px;
 	display: block;
-	border-bottom: solid 4px #F2BC19;
+	border-bottom: solid 4px #666;
 	position: fixed; 
 	top: 0;
 	z-index: 10;
 	background-color: #E8E8E5;
 	width: 100%;
+}
 
+header.skills {
+	border-color: #E74055;
+}
+
+header.works {
+	border-color: #4DA5C4;
+}
+
+header.about {
+	border-color: #F2BC19;
 }
 
 /* navigation */ 
@@ -134,6 +194,22 @@ nav ul li:first-child {
 	color: #F2BC19;
 }
 
+.item.home a.icon-home:before { 
+	content: '\e805'; 
+	font-size: 35px;
+	margin-left: 10px;
+	margin-top:8px;
+	opacity: 0.4;
+} 
+
+.item.home a:hover.icon-home:before { 
+	opacity: 1;
+} 
+
+.item.home a span {
+	display: none;
+}
+
 /* frontpage  */
 
 .frontpage {
@@ -184,6 +260,8 @@ nav ul li:first-child {
 	width: 185px;
 
 }
+
+
 
 
 
