@@ -36,6 +36,18 @@ a {
 	color: #111;
 }
 
+.skills a:hover {
+	color: #E74055 ;
+}
+
+.works a:hover {
+	color: #4DA5C4;
+}
+
+.about a:hover {
+	color: #F2BC19;
+}
+
 h1, h2, h3 {
 	font-family: 'Oswald', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -305,11 +317,15 @@ nav ul li:first-child {
 	}
 
 	nav ul li {
-		margin: 10px;
+		margin: 15px;
 		float:none;
 		clear: both;
-		margin-left: 0;
 	}
+
+	nav ul li:first-child {
+		margin-left: 15px;
+	}
+
 	.item a span {
 		position: relative;
 		top: 17px;
