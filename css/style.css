@@ -26,6 +26,11 @@ p {
 	line-height: 1.5;
 }
 
+p.lead {
+	font-size: 18px;
+	font-weight: 700;
+}
+
 a {
 	text-decoration: none; 
 	color: #111;
@@ -60,6 +65,7 @@ li {
 
 article {
 	margin: 145px 20px 30px;
+	max-width: 720px;
 
 }
 
@@ -261,7 +267,111 @@ nav ul li:first-child {
 
 }
 
+/* about */ 
 
+.timeline-item {
+	line-height: 1.5;
+
+}
+
+.timeline-item span {
+	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+	display: block;
+	margin: 10px 0;
+}
+
+.about img {
+	max-width: 350px;
+	height: auto;
+}
+
+@media all and (min-width: 700px) {
+	header {
+		margin:0 20px;
+		padding-top: 90px;
+		display: block;
+		border-bottom: none;
+		position: fixed; 
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background-color: #E8E8E5;
+		width: 200px;
+		height: 100%;
+	}
+	nav ul {
+		display:block;
+		margin:0;
+	}
+
+	nav ul li {
+		margin: 10px;
+		float:none;
+		clear: both;
+		margin-left: 0;
+	}
+	.item a span {
+		position: relative;
+		top: 17px;
+		left: 75px;
+		display: block;
+		width: 100px;
+  	text-align: left;
+  	font-size: 16px;
+	}	
+	article {
+		margin: 100px 20px 30px 270px;
+		padding: 0 20px;
+		border-left: 4px solid #333;
+	}
+
+	article.skills {
+		border-color: #E74055;
+	}
+	article.works {
+		border-color: #4DA5C4;
+	}
+	article.about {
+		border-color: #F2BC19;
+	}
+
+	.about img {
+		max-width: 200px;
+		height: auto;
+		float:left;
+		margin-right: 20px;
+	}
+
+	.frontpage {
+		margin-top: 100px;
+	}
+
+	.frontpage h1 {
+		font-size: 32px; 
+	}
+
+	.frontpage h1 span {
+		font-size: 54px;
+	}
+
+	.frontpage .item, .frontpage .item a {
+		width: 230px;
+		height: 230px;
+	}
+
+	.frontpage .item {
+		display:inline-block;
+		margin: 30px;
+	} 
+
+	.frontpage .item a span {
+		text-align: center;
+		left: 0;
+		top: 0;
+		margin-top: 160px;
+	}
+
+}
 
 
 
