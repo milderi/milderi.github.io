@@ -229,6 +229,28 @@ nav ul li:first-child {
 	display: none;
 }
 
+footer {
+	background-color: #333;
+	z-index: 10;
+	position: relative;
+	bottom: 0;
+	padding: 20px;
+	display: block;
+}
+
+footer ul {
+	display: block;
+	margin-bottom: 0;
+}
+
+footer ul li, footer ul li a {
+	color:#ccc;
+}
+
+footer h2 {
+	display: none;
+}
+
 /* frontpage  */
 
 .frontpage {
@@ -366,6 +388,23 @@ nav ul li:first-child {
 		height: auto;
 		float:left;
 		margin-right: 20px;
+	}
+
+	footer {
+		padding: 10px 40px;
+	}
+
+	footer ul {
+		display: inline-block;
+	}
+
+	footer ul li {
+		float: left;
+		margin: 0 40px 20px 0;
+	}
+
+	footer ul li, footer ul li a {
+		font-size: 14px;
 	}
 
 	.frontpage {
