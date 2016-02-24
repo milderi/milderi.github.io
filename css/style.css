@@ -271,6 +271,10 @@ footer h2 {
 	display: none;
 }
 
+footer a {
+	border-bottom: none;
+}
+
 /* frontpage  */
 
 .frontpage {
