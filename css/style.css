@@ -34,6 +34,19 @@ p.lead {
 a {
 	text-decoration: none; 
 	color: #111;
+	border-bottom: 2px solid #111;
+}
+
+.skills a {
+	border-color: #E74055;
+}
+
+.works a {
+	border-color: #4DA5C4;
+}
+
+.about a {
+	border-color: #F2BC19;
 }
 
 .skills a:hover {
@@ -78,7 +91,7 @@ li {
 }
 
 article {
-	margin: 145px 20px 30px;
+	margin: 145px 20px 60px;
 	max-width: 720px;
 
 }
@@ -179,7 +192,8 @@ nav ul li:first-child {
 }
 
 .item.skills a {
-	background: rgba(231, 64, 85, 0.6)
+	background: rgba(231, 64, 85, 0.6);
+	border-bottom: none;
 }
 
 .item.works  {
@@ -187,7 +201,8 @@ nav ul li:first-child {
 }
 
 .item.works a {
-	background: rgba(77, 165, 196, 0.6)
+	background: rgba(77, 165, 196, 0.6);
+	border-bottom: none;
 }
 
 .item.about  {
@@ -195,7 +210,8 @@ nav ul li:first-child {
 }
 
 .item.about a {
-	background: rgba(242, 188, 25, 0.6)
+	background: rgba(242, 188, 25, 0.6);
+	border-bottom: none;
 }
 
 .item.skills a:hover, .item.skills.active a{
@@ -211,6 +227,10 @@ nav ul li:first-child {
 .item.about a:hover, .item.about.active a {
 	background: transparent;
 	color: #F2BC19;
+}
+
+.item.home a {
+	border-bottom: none;
 }
 
 .item.home a.icon-home:before { 
@@ -368,7 +388,7 @@ footer h2 {
 	}
 
 	article {
-		margin: 100px 20px 30px 270px;
+		margin: 100px 20px 60px 270px;
 		padding: 0 20px;
 		border-left: 4px solid #333;
 	}
